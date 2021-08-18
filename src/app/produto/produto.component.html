@@ -15,7 +15,7 @@
 
       <ng-template #elseTemplate>
         <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
-          type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Cate seu reciclável</button>
+          type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">Cate seu reciclável</button>
       </ng-template>
     </div>
 
@@ -51,7 +51,7 @@
                           <div class="mb-3 ml-3" id="end">
                             <label for="categoria" class="form-label">Categoria</label>
                             <select class="form-control" name="categoria" id="categoria">
-                              <option *ngFor='let item of listaCategoria' value="{{item.id}}">
+                              <option *ngFor='let item of listaCategoria | orderBy : key : reverse' value="{{item.id}}">
                                 {{item.residuo}}
                               </option>
                             </select>
@@ -114,7 +114,7 @@
               </thead>
               <tbody>
 
-                <tr class="text-white" *ngFor='let item of listaProdutos'>
+                <tr class="text-white" *ngFor='let item of listaProdutos | orderBy : key : reverse'>
                   <td class="pd">{{item.idProduto}}</td>
                   <td class="pd">{{item.descricao}}</td>
                   <td class="pd">{{item.quantidade}}</td>
@@ -174,7 +174,7 @@
                     <div class="mb-3">
                       <label for="categoria" class="form-label">Categoria</label>
                       <select class="form-control" name="categoria" id="categoria">
-                        <option *ngFor='let item of listaCategoria' value="{{item.id}}">
+                        <option *ngFor='let item of listaCategoria  | orderBy : key : reverse' value="{{item.id}}">
                           {{item.residuo}}
                         </option>
                       </select>
