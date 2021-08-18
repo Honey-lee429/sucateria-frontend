@@ -1,0 +1,28 @@
+.bg-geral {
+  background-color: #E5F2D8;
+}
+
+.card {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: #001d3d;
+}
+
+.modal-content {
+  background-color: E5F2D8;
+}
+
+.entrar {
+  margin: auto;
+}
+
+.btn-cadastrar {
+  width: 100%;
+}
+
+img {
+  bottom: 1px;
+}

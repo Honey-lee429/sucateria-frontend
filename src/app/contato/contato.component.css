@@ -1,0 +1,17 @@
+.bg-claro {
+    background-color: #E5F2D8;
+}
+.w-100{
+    width: 100%;
+}
+
+.bg-img{
+    background-image:url('../../assets/img/reciclando-respeito.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+
+
+
