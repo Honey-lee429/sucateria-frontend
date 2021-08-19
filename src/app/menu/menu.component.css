@@ -8,7 +8,7 @@
     height: 50px;
     object-fit: cover;
     position:relative;
-    top: 10px;
+    top: 3px;
 }
 
 p:hover {
@@ -21,7 +21,7 @@ p:hover {
 }
 
 .dropdown-menu{
-    background: linear-gradient(#020024, #001d3d, #00d4ff)  ;
+    background: linear-gradient(#020024, #001d3d, #0a56b1)  ;
 }
 
 .navbar{
